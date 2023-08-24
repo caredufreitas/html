@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body{
+	background-color: #51a8b1;
+}
+section#corpo{
+	display: block;
+	width: 1200px;
+	height: 1400px;
+	background-color: #2a4652;
+	float: center;
+	margin: 25px auto 0px auto;	
+}
+section#corpo h1{
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 30pt;
+	padding: 0px;
+	margin: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+section#corpo h2{
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 23pt;
+	padding: 0px;
+	margin: 5px;
+}
+section#corpo h3{
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 18pt;
+	padding: 0px;
+	margin: 5px;
+}
+p{
+	text-aligh: justify;
+	color: white;
+	text-indent: 50px; 
+}
+
+/*formatacao cabecalho*/
+header#cabecalho{
+	border-bottom: 1px #ffffff solid;
+	height: 150px;
+	background-color: #2a4652;
+}
+header#cabecalho  h1{
+	fonte-family: 'FonteLogo', sans-serif;
+	font-size: 40pt;
+	text-align: center;
+	text-shadow: 0px 0px 1px #ffffff;
+	padding: 0px;
+	margin-bottom: 0px;
+	color: #ffffff;
+}
+header#cabecalho h2{
+	font-family: 'FonteLogo', sans-serif;
+	font-size; 20pt;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	color: #ffffff;
+}
+/*formatacao do menu*/
+nav#menu{
+	display: block;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 400px; 
+}
+nav#menu li{
+
+	display: inline-block;
+	background-color: #2a4652;
+	padding: 10px;	
+	margin: 2px;
+	transition: background-color 1s;
+}
+nav#menu li:hover{
+
+	background-color: #606060;
+}
+
+nav#menu a{
+
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+
+	color: #ffffff;
+	text-decoration: underline;
+}
+/*formatacao img*/
+div#interface img#icone1{
+	position: absolute;
+	left: 30px;
+}
+div#interface img#icone2{
+	position: absolute;
+	left: 900px;
+}
+div#interface img#icone3{
+	position: absolute;
+	top: 1100px;
+	left: 900px;
+}
+div#interface img#icone4{
+	position: absolute;
+	top: 1100px;
+	left: 30px;
+}
+a{
+	display: block;
+	position: relative;
+	float: left;
+}
+/*formatacao aside*/
+aside#lateral{
+	display: block;
+	position: absolute;
+	width: 400px;
+	left: 450px;
+	background-color: #51a8b1;
+	float: center;
+	top: 700px;
+}
+/*formatacao do rodape*/
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+	margin-top: 0px;
+	top: 800px;
+}
+footer#rodape p{
+	text-align: center;
+	color: black;
+}

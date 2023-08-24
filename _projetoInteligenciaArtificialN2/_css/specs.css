@@ -1,0 +1,10 @@
+﻿@charset "utf-8";
+
+section#corpo-full{
+	display: block;
+	width: 1000px;
+	background-color: #2a4652;
+	float: center;
+	margin: 25px auto 0px auto;
+	
+}
