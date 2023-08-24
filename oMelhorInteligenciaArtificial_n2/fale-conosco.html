@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>			
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Inteligência Artificial</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="_css/form.css">
+	<script language="javaScript" src="_javascript/funcoes.js"></script>
+</head>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<h1>Elas vão substituir você</h1>
+		<h2>O futuro das coisas</h2>
+		
+	<img id="icone" src="_imagens/contato.png">
+	
+	<nav id="menu">
+		<h1>Menu principal</h1>
+		<ul>
+		<li onmousemove="mudafoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+		<li onmousemove="mudafoto('_imagens/especificacoes.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="especs.html">Especificações</a></li>
+		<li onmousemove="mudafoto('_imagens/fotos.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmousemove="mudafoto('_imagens/contato.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+		<li onmousemove="mudafoto('_imagens/diploma.png')" onmouseout="mudafoto('_imagens/contato.png')"><a href="curriculo.html">formação profissional</a></li>
+		</ul>
+	</nav>	
+	</header>
+	<section id="corpo-full">
+			<header id="cabecalho-artigo">
+				<hgroup>
+					<h3>Inteligência Artificial > Fale-conosco</h3>
+					<h1>O futuro das Coisas</h1>
+					<h3 class="dir">atualizado em 20/março/2018</h3>
+				</hgroup>
+			</header>
+			<form method="post" id="fContato" action="mailto:carlosfreitas1980@gmail.com">
+				<fieldset id="usuario">
+					<legend>Indentificação do usuário</legend>
+					<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+					<p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="20" maxlength="16" placeholder="16 - Digitos"/></p>
+					<p><label for="cE-mail">E-mail:</label><input type="e-mail" name="tE-mail" id="cE-mail" size="20" maxlength="30" placeholder="E-Mail"/></p>
+				
+				<fieldset id="sexo">
+					<legend>Sexo</legend>
+						<p><input type="radio" name="tSexo" id="cMasc" checked/><label for="cMasc">Mascullino</label></p>
+						<p><input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label></p>
+					<p><label for="cNasc">Data de Nascimento:</label><input type="date" name="tNasc" id="cNasc"/></p>
+				</fieldset>
+				</fieldset>
+				
+				<fieldset id="endereco">
+					<legend>Endereço do Usuário</legend>
+					<p><label for="cRua">Lagradouro:</label><input type="text" name="tRua" id="cRua" size="20" maxlength="30" placeholder="Av, Rua, Trav"/></p>
+					<p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+					<p><label for="cEst">Estado:</label>
+					<select name="tEst" id="cEst">
+						<optgroup label="Região Sudeste">
+							<option value="ES">Espirito Santo</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="Sp" select>São Paulo</option>
+						</optgroup>
+						<optgroup label="Região Sul">
+							<option value="PR">Paraná</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="RGS">Rio Grande do Sul</option>
+						</optgroup>
+						<optgroup label="Região Centro Oeste">
+							<option value="Br">Brasília</option>
+							<option value="GO">Goiás</option>
+							<option value="MG">Mato Grosso</option>
+							<option value="MGS">Mato Grosso do Sul</option>
+						</optgroup>
+						<optgroup label="Região Nordeste">
+							<option value="Al">Alagoas</option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="MA">Maranhão</option>
+							<option value="PA">Paraíba</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RGN">Rio Grande do Norte</option>
+							<option value="SE">Sergipe</option>
+						</optgroup>
+						<optgroup label="Região Norte">
+							<option value="AC">Acre</option>
+							<option value="AP">Amapá</option>
+							<option value="AM">Amazonas</option>
+							<option value="PR">Pará</option>
+							<option value="RO">Rondônia</option>
+							<option value="RA">Roraima</option>
+							<option value="TO">Tocantins</option>
+						</optgroup>
+					</select>
+					</p>
+					<p><label for="cCid">Cidade:</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+					<datalist id="cidades">
+						<! regiao sudeste>
+						<option value="Vitória"></option>
+						<option value="Belo Horizonte"></option>
+						<option value="Rio de Janeiro"></option>
+						<option value="São Paulo"></option>
+						<! regiao sul>
+						<option value="Curitiba"></option>
+						<option value="Florianópolis "></option>
+						<option value="Porto Alegre "></option>
+						<! regiao nordeste>
+						<option value="Maceió"></option>
+						<option value="Salvador"></option>
+						<option value="Fortaleza"></option>
+						<option value="São Luís"></option>
+						<option value="João Pessoa"></option>
+						<option value="Recife"></option>
+						<option value="Teresina"></option>
+						<option value="Natal"></option>
+						<option value="Aracaju"></option>
+						<! regiao norte>
+						<option value="Rio Branco"></option>
+						<option value="Macapá"></option>
+						<option value="Manaus"></option>
+						<option value="Belém"></option>
+						<option value="Porto Velho"></option>
+						<option value="Boa Vista"></option>
+						<option value="Palmas"></option>
+						
+					</datalist>
+				</fieldset>
+				
+				<fieldset id="mensagem">
+					<legend>Mensagem do Usuário</legend>
+					<p><label for="cCid">Grau de Urgência:<br></label> <br>min 0 &nbsp <input type="range" name="tCid" id="cCid" min="0" max="10" step="5"/> max 10</p>
+					<p><label for="cMsg">Mensagem:</label></p>
+					<textarea name="tMsg" id="cMsg" cols="40" rows="15" placeholder="Deixe aqui sua mensagem:"></textarea>
+				</fieldset>
+				<input type="image" name="tEnviar" id="cEnviar"src="_imagens/botao-enviar.png"/>
+			</form>
+		</section>
+	<footer id="rodape">
+		<p>Copyright 2013 - by Carlos Freitas & Alexandre Becker</p>
+	</footer>
+</div>
+</body>
+</html>

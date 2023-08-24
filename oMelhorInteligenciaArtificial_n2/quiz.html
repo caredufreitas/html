@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>			
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<script language="javaScript" src="_javascript/funcoes.js"></script>
+	<script language="javaScript" src="_javascript/quiz.js"></script>
+</head>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<h1>Elas vão substituir você</h1>
+		<h2>O futuro das coisas</h2>
+		
+	<img id="icone" src="_imagens/icone-ia.png">
+	
+	<nav id="menu">
+		<h1>Menu principal</h1>
+		<ul>
+		<li onmousemove="mudafoto('_imagens/home.png')" onmouseout="mudafoto('_imagens/icone-ia.png')"><a href="index.html">Home</a></li>
+		<li onmousemove="mudafoto('_imagens/especificacoes.png')" onmouseout="mudafoto('_imagens/icone-ia.png')"><a href="especs.html">Especificações</a></li>
+		<li onmousemove="mudafoto('_imagens/fotos.png')" onmouseout="mudafoto('_imagens/icone-ia.png')"><a href="fotos.html">Fotos</a></li>
+		<li onmousemove="mudafoto('_imagens/contato.png')" onmouseout="mudafoto('_imagens/icone-ia.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+		<li onmousemove="mudafoto('_imagens/diploma.png')" onmouseout="mudafoto('_imagens/icone-ia.png')"><a href="curriculo.html">formação profissional</a></li>
+		</ul>
+	</nav>	
+	</header>
+	<section id="corpo-full">
+			<header id="cabecalho-artigo">
+				<hgroup>
+					<h3>Inteligência Artificial > home</h3>
+					<h1>O futuro das Coisas</h1>
+					<h3 class="dir">atualizado em 20/março/2018</h3>
+				</hgroup>
+			</header>
+	
+	<form name="test">
+	
+	<center><h1>Questões:</h1></center>
+	<br>
+	<br>
+
+		<h2>Questão 1: Quantos pontos a microsoft conseguia bater os humanos nos teste neural?</h2><br>
+			<input type="radio" name="questao1" value="A"> 92.150<br>
+			<input type="radio" name="questao1" value="B"> 79.100<br>
+			<input type="radio" name="questao1" value="C"> 82.650<br>
+			<input type="radio" name="questao1" value="D"> 102.950<br>
+			<input type="radio" name="questao1" value="E"> 84.960<br>
+			<br>
+
+		<h2>Questão 2: O que e Base de conhecimento?</h2><br>
+			<input type="radio" name="questao2" value="A"> Base de conhecimento é onde ficam armazenados todo o conhecimento do IA.<br>
+			<input type="radio" name="questao2" value="B"> Base de conhecimento é uma base onde ficam todos os engenheiros e programadores de IA.<br>
+			<input type="radio" name="questao2" value="C"> Base de conhecimento é um sistema especialista.<br>
+			<input type="radio" name="questao2" value="D"> Base de conhecimento é de onde o IA tira todos os dados para tomar decisões.<br>
+			<input type="radio" name="questao2" value="E"> Base de conhecimento é um elemento permanente, mas específico de um sistema especialista.<br>
+			<br>
+
+		<h2>Questão 3: O que e Mecanismo de Inferência?</h2><br>
+			<input type="radio" name="questao3" value="A"> É um mecanismo que avalia as decisões do IA.<br>
+			<input type="radio" name="questao3" value="B"> É a parte responsável pela tomada de decisões.<br>
+			<input type="radio" name="questao3" value="C"> É a parte responsável pela busca das regras da base de conhecimento para serem avaliadas.<br>
+			<input type="radio" name="questao3" value="D"> É o mecanismo que interfere no processo lógico do IA.<br>
+			<input type="radio" name="questao3" value="E"> É o mecanismo que transfere o conhecimento do banco de dados para a tomada lógica do IA.<br>
+			<br>
+
+		<h2>Questão 4: O que e Quadro-Negro?</h2><br>
+			<input type="radio" name="questao4" value="A"> O quadro-negro é um lugar dentro da memória do computador no qual as informações especializadas são armazenadas.<br>
+			<input type="radio" name="questao4" value="B"> O quadro-negro é um bug no sistema dos IA.<br>
+			<input type="radio" name="questao4" value="C"> O quadro-negro é uma falha na memória dos computadores IA<br>
+			<input type="radio" name="questao4" value="D"> O quadro-negro é uma memória temporaria que fica dentro das memorias dos computadores.<br>
+			<input type="radio" name="questao4" value="E"> O quadro-negro é quando um IA precisa tomar uma decisão sem nenhuma base de conhecimento.<br>
+			<br>
+
+		<h2>Questão 5: O que significa IA?</h2><br>
+			<input type="radio" name="questao5" value="A"> Inteligencia Artificial.<br>
+			<input type="radio" name="questao5" value="B"> Integração de Androids.<br>
+			<input type="radio" name="questao5" value="C"> Interruptor Analógico.<br>
+			<input type="radio" name="questao5" value="D"> Inteligência Analógica.<br>
+			<input type="radio" name="questao5" value="E"> Inteligência Automotiva.<br>
+			<br>
+
+		<br>
+
+	<input type="button" name="valide" value="Resultados" onclick="javascript:solucao(this.form);">
+	</form>
+	<br>
+	<br>
+	<footer id="rodape">
+		<p>Copyright 2013 - by Carlos Freitas & Alexandre Becker</p>
+	</footer>
+</div>
+</body>
+</html>

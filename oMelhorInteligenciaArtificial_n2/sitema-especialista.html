@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+	<meta charset="utf-8">
+	<title>Informações sobre Sistema Especialista</title>
+	<style>
+		body{
+			font-family: Arial;
+			font-size: 10pt;
+		}
+		p{
+			text-align: justify;
+			text-indent: 20px;
+			color: #ffffff;
+		}
+		article h1{
+			font-size: 15pt;
+			color: #ffffff;
+			background-color: rgba(0, 0, 0, .3);
+			padding: 5px;
+			margin: 0px;
+		}
+		article h2{
+			font-size: 13pt;
+			color: #888888;
+			margin: 0px;
+		}
+		article{
+			margin-bottom: 800px;
+		}
+	</style>
+</header>
+	<body>
+	<article id="topo">
+		<header>
+			<h2>Clique sobre as Áreas destacadas em vermelho</h2>
+			<img src="_imagens/mao.png" alt="mão apontando para esquerda"/>
+		</header>
+	</article>
+	<article id="base">
+		<h1>Base de conhecimento</h1>
+		<h2>Base de conhecimento é um elemento permanente, mas específico de um sistema especialista.</h2>
+		<p>É onde estão armazenadas as informações de um sistemas especialista, ou seja os fatos e as regras. As informações armazenadas de um determinado domínio fazem do sistema um especialista neste domínio.</p> 
+		<img src="_imagens/b-conhecimento.png">
+	</article>
+	<article id="quadro">
+		<h1>Quadro-Negro</h1>
+		<h2>A comunicação das informações entre os sistemas especialistas é feita por um mecanismo chamado quadro-negro.</h2>
+		<p>O quadro-negro é um lugar dentro da memória do computador no qual as informações armazenadas em um sistema especialista são "afixadas" para que qualquer outro sistema especialista possa usá-lo se precisar das informações lá contidas para alcançar seus objetivos.
+			O quadro-negro é uma estrutura que contém informações que podem ser examinadas por sistemas especialistas cooperativos.
+			O que esse sistemas fazem com essas informações depende da aplicação.
+			Você nunca entrou em uma sala de aula e viu um aviso no quadro-negro dizendo que aquela turma mudou de sala?
+			Esse aviso poderia ter sido escrito pela secretária da escola que foi informada de que o professor estaria ausente naquele dia;
+			por isso surgiu a necessidade de combinar turmas similares com um só professor. A secretária estava atenta a essa situação e reagiu de acordo.
+			O conceito do quadro-negro para afixar, modificar e observar mudanças é muito importante para os sistemas cooperativos.
+			Ainda assim, quadro-negro, rascunho ou memória de trabalho tem sua vida útil durante o curso de uma consulta e está vinculada a uma consulta concreta. É uma área de memória usada para fazer avaliações das regras que são recuperadas da base de conhecimento para se chegar a uma solução.
+			As informações são gravadas e apagadas em um processo de inferência até se chegar a solução desejada.</p>
+			<img src="_imagens/q-negro.png">
+	</article>
+	<article id="mecanismo">
+			<h1>Mecanismo de Inferência</h1>
+			<h2>Mecanismo de inferência ou motor de inferência é um elemento permanente</h2>
+			<p>Que pode ser inclusive ser reutilizado por vários sistemas especialistas.
+			É a parte responsável pela busca das regras da base de conhecimento para serem avaliadas, direcionando o processo de inferência.
+			O conhecimento deve estar preparado para uma boa interpretação e os objetos devem estar em uma determinada ordem representados por uma árvore de contexto.
+			Basicamente o mecanismo de inferência é dividido em tarefas que são: Selecionar e buscar Avaliar Procurar Resumindo as tarefas acima,
+			podemos dizer que as regras necessárias para se chegar a uma meta devem ser buscadas na base de conhecimento.
+			Essas regras serão colocadas no quadro negro, sendo que as regras já existentes só serão avaliadas depois das mais recentes.
+			A ordem de avaliação no quadro negro obedece a uma estrutura do tipo pilha com o objetivo de atingir a meta mais recente.
+			A regra continuará sendo avaliada enquanto as condições da premissa forem verdadeiras, caso contrário a regra será eliminada,
+			a meta estabelecida desempilhada e uma nova regra será carregada. Quando um valor de um parâmetro em um determinado contexto não é conhecido e não se encontra nas estruturas de pilha,
+			deve-se então procurar novas informações na base de conhecimento, provocar a busca de novas regras ou perguntar diretamente ao usuário.</p> 
+			<img src="_imagens/m-inferencia.png">
+	</article>
+	</body>
+</html>
